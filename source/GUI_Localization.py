@@ -48,6 +48,8 @@ class GUI_Localization:
         self.pos_robot_x = [0, 0, 0, 0, 0]
         self.pos_robot_y = [0, 0, 0, 0, 0]
         self.pos_robot_yaw = [0, 0, 0, 0, 0]
+        self.pos_robot_pitch = [0, 0, 0, 0, 0]
+        self.pos_robot_roll = [0, 0, 0, 0, 0]
 
         # Ball position for all robots
         self.ball_robot_x = [0, 0, 0, 0, 0]
@@ -58,6 +60,7 @@ class GUI_Localization:
         self.play_robot = [0, 0, 0, 0, 0]
         self.role_robot = [0, 0, 0, 0, 0]
         self.pickup_robot = [0, 0, 0, 0, 0]
+        self.release_robot = [0, 0, 0, 0, 0]
 
         # Variabel Bola Robot
         self.found_ball_robot = [0, 0, 0, 0, 0]
