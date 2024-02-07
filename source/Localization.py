@@ -19,6 +19,8 @@ class Localization:
         self.pos_robot_x = [0, 0, 0, 0, 0]
         self.pos_robot_y = [0, 0, 0, 0, 0]
         self.pos_robot_yaw = [0, 0, 0, 0, 0]
+        self.pos_robot_pitch = [0, 0, 0, 0, 0, 0]
+        self.pos_robot_roll = [0, 0, 0, 0, 0]
 
         # Ball position for all robots
         self.ball_robot_x = [0, 0, 0, 0, 0]
@@ -29,6 +31,7 @@ class Localization:
         self.play_robot = [0, 0, 0, 0, 0]
         self.role_robot = [0, 0, 0, 0, 0]
         self.pickup_robot = [0, 0, 0, 0, 0]
+        self.release_robot = [0, 0, 0, 0, 0]
 
         # Variabel Bola Robot
         self.found_ball_robot = [0, 0, 0, 0, 0]
@@ -46,17 +49,18 @@ class Localization:
         self.s3 = tk.StringVar()
 
         # # local
-        self.s0.set("tcp://127.0.0.1:5555")
-        self.s1.set("tcp://127.0.0.1:5556")
-        self.s2.set("tcp://127.0.0.1:5557")
-        self.s3.set("tcp://127.0.0.1:5558")
+        # self.s0.set("tcp://127.0.0.1:5555")
+        # self.s1.set("tcp://127.0.0.1:5556")
+        # self.s2.set("tcp://127.0.0.1:5557")
+        # self.s3.set("tcp://127.0.0.1:5558")
 
         # # # Socket to talk to server
         # self.s0.set("tcp://192.168.5.101:5555")
         # self.s1.set("tcp://192.168.5.102:5555")
         # self.s2.set("tcp://192.168.5.103:5555")
         # self.s3.set("tcp://192.168.5.104:5555")
-
+        self.s2.set("tcp://192.168.1.103:5555")
+        #self.s2.set("tcp://192.168.1.103:5555")
         # Tambahkan teks ke kotak teks
         # self.text.insert("2.0", "Done!\n")
 
